@@ -1,0 +1,2 @@
+# LoaTool
+LostArk Jokbo Tool
