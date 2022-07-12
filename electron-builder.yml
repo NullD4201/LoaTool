@@ -1,0 +1,33 @@
+appId: 'com.github.NullD4201'
+productName: 'LoaTool'
+artifactName: 'LoaTool-setup-${version}.${ext}'
+
+copyright: 'Copyright © 2022 NullD4201, Tilto_'
+
+asar: true
+compression: 'maximum'
+
+files:
+  - build/**/*
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.travis.yml,.nvmrc,.eslintrc.json,build.js}'
+
+extraResources:
+  - 'libraries'
+
+# Windows Configuration
+win:
+  target:
+    target: 'nsis'
+    arch: 'x64'
+
+# Windows Installer Configuration
+nsis:
+  oneClick: true
+  perMachine: true
+  allowElevation: true
+  allowToChangeInstallationDirectory: false
+  installerIcon: './build/icon.ico'
+  uninstallerIcon: './build/icon.ico'
+
+directories:
+  output: './dist'

@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+pack
+.vscode
+distro.json
+src/main/config.json
+src/main/dev-app-update.yml

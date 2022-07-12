@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/main/*" :     ["src/main/*"],
+      "@/renderer/*" : ["src/renderer/*"],
+      "@/lib/*":    ["src/renderer/lib/*"],
+      "@/enums/*": ["src/renderer/lib/enums/*"],
+      "@/interfaces/*": ["src/renderer/lib/interfaces/*"],
+      "@/versions/*": ["src/renderer/lib/versions/*"],
+    }
+  }
+}
